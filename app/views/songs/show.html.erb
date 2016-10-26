@@ -1,0 +1,7 @@
+<% @song.attributes.each do |key, val| %>
+
+  <% unless key == "id" %>
+  <strong><%= key.titleize %>:</strong>&nbsp;<%= val %><br>
+  <% end %>
+<% end %>
+<!-- <%= link_to "Delete This Song", "/destroy" %> -->
